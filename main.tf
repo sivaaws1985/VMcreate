@@ -1,11 +1,8 @@
-provider "aws" {
-    region = "us-east-1"  
-}
 
 resource "aws_instance" "foo" {
-  ami           = "ami-05fa00d4c63e32376" # us-west-2
+  ami           = "ami-0f918f7e67a3323f0"
   instance_type = "t2.micro"
   tags = {
-      Name = "TF-Instance"
+    Name = "TF-Instance"
   }
 }
